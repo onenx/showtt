@@ -58,8 +58,10 @@ func timeLine(allTime []eve) {
 }
 
 func main() {
-	b, err := ioutil.ReadFile("./config.json")
+
+	b, err := ioutil.ReadFile("D:\\showtt\\config.json") //定时任务需指定绝对路径
 	if err != nil {
+		log.Fatalln(err)
 		return
 	}
 	var allList []eve
