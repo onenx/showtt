@@ -59,6 +59,8 @@ func timeLine(allTime []eve) {
 
 func main() {
 
+	// go build -ldflags=”-H windowsgui”
+	// 隐藏运行时候的dos窗口
 	nowHour := time.Now().Hour()
 	switch nowHour {
 	//执行时间
